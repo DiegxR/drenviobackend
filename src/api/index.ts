@@ -1,11 +1,11 @@
 import express from "express";
 import mongoose from "mongoose";
-import productsRouter from "./routes/productsRouter"; // Asegúrate de que la ruta sea correcta
-import usersRouter from "./routes/usersRouter";
+import productsRouter from "../routes/productsRouter"; // Asegúrate de que la ruta sea correcta
+import usersRouter from "../routes/usersRouter";
 import cors from "cors";
 const app = express();
 const corsOptions = {
-  origin: 'http://localhost:3000', // Solo permitir solicitudes de este origen
+  origin: '*', // Solo permitir solicitudes de este origen
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
   allowedHeaders: ['Content-Type', 'Authorization'], // Cabeceras permitidas
 };

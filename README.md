@@ -3,7 +3,7 @@
 Este proyecto es una API sencilla construida con **Express.js** que sirve para manejar solicitudes HTTP y responder con datos JSON. El objetivo es proporcionar un backend simple para interactuar con la base de datos de mongoDB.
 
 ## Ejecutar localmente
-1. clonar el repositorio
+1. clonar el repositorio `git clone https://github.com/DiegxR/drenviobackend.git`
 2. instalar dependencias `npm install`.
 3. ejecutar el comando para correr el proyecto `npm run dev`.
 4. Instalar nodemon de forma global `npm i -g nodemon` para el entorno de desarrollo `npm run dev`.
