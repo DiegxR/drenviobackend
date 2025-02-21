@@ -41,12 +41,6 @@ Este proyecto es una API sencilla construida con **Express.js** que sirve para m
 - **app.ts**: Punto de entrada de la aplicación y configuración del servidor Express.
 - **database.ts**: Configuración y conexión a la base de datos.
 
-## Scripts disponibles
-
-En el archivo `package.json`, encontrarás los siguientes scripts:
-
-- `npm run dev`: Inicia el servidor en modo de desarrollo con `nodemon`.
-
 ## Requisitos
 
 - Node.js
