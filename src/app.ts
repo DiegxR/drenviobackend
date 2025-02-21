@@ -13,7 +13,6 @@ const corsOptions = {
 app.use(cors(corsOptions));
 // Middleware para parsear el cuerpo de la solicitud como JSON
 app.use(express.json());
-app.use(cors());
 // Usar las rutas definidas para productos
 app.use("/api/products", productsRouter);
 app.use("/api/users", usersRouter);
