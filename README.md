@@ -4,16 +4,16 @@ Este proyecto es una API sencilla construida con **Express.js** que sirve para m
 
 ## Ejecutar localmente
 1. clonar el repositorio
-2. instalar dependencias `npm install`
-3. Instalar nodemon de forma global `npm i -g nodemon`
-4. ejecutar el comando para correr el proyecto `npm run dev`
+2. instalar dependencias `npm install`.
+3. ejecutar el comando para correr el proyecto `npm run dev`.
+4. Instalar nodemon de forma global `npm i -g nodemon` para el entorno de desarrollo `npm run dev`.
+
 ## Justificación Tecnologías Utilizadas
 
 - **Node.js**: Permite un desarrollo rápido con JavaScript en el backend.
 - **Express.js**: Simplifica la creación de rutas y manejo de peticiones en la API.
 - **Mongoose**: Facilita la conexión y manejo de datos en MongoDB.
 - **Cors**: Permite que la API sea accesible desde otros dominios de forma segura.
-
 
 
 ## Estructura de Archivos
