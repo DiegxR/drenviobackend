@@ -11,16 +11,17 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-// Middleware para parsear el cuerpo de la solicitud como JSON
 app.use(express.json());
-// Usar las rutas definidas para productos
 app.use("/api/products", productsRouter);
 app.use("/api/users", usersRouter);
 const mongoURI =
-  "mongodb+srv://drenviochallenge:m1jWly3uw42cBwp6@drenviochallenge.2efc0.mongodb.net/drenvioStore?retryWrites=true&w=majority"; // Tu URL de conexión
+  "mongodb+srv://drenviochallenge:m1jWly3uw42cBwp6@drenviochallenge.2efc0.mongodb.net/drenvioStore?retryWrites=true&w=majority"; 
 
 mongoose
-  .connect(mongoURI, {})
+  .connect(mongoURI, {
+    connectTimeoutMS: 10000,
+    socketTimeoutMS: 45000 
+  })
   .then(() => {
     console.log("Conectado a MongoDB");
   })
@@ -28,7 +29,6 @@ mongoose
     console.error("Error al conectar a MongoDB:", error);
   });
 
-// Iniciar el servidor
 const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);

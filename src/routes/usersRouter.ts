@@ -3,7 +3,6 @@ import { getUserByEmail, getUsers, requestUsers } from '../controllers/usersCont
 
 const router = Router();
 
-// Crear un precio especial 
 router.post('/', requestUsers);
 
 router.get('/', getUsers);
