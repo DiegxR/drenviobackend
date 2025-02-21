@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
-import productsRouter from "../routes/productsRouter"; // Asegúrate de que la ruta sea correcta
-import usersRouter from "../routes/usersRouter";
+import productsRouter from "./routes/productsRouter"; // Asegúrate de que la ruta sea correcta
+import usersRouter from "./routes/usersRouter";
 import cors from "cors";
 const app = express();
 const corsOptions = {
