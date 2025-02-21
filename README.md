@@ -15,7 +15,8 @@ Este proyecto es una API sencilla construida con **Express.js** que sirve para m
 - **Mongoose**: Facilita la conexión y manejo de datos en MongoDB.
 - **Cors**: Permite que la API sea accesible desde otros dominios de forma segura.
 
-
+## Arquitectura
+Esta arquitectura se basa en rutas, controladores y modelos, dónde la ruta llama a las funciones del controlador y este afecta a las bases de datos apartir de un modelo.
 ## Estructura de Archivos
 
 - **controllers/**: Contiene las funciones que alteran directamente la base de datos
@@ -47,8 +48,4 @@ Este proyecto es una API sencilla construida con **Express.js** que sirve para m
 - TypeScript
 - Nodemon (opcional para desarrollo)
 
-## Instalación
 
-```bash
-npm install
-```
